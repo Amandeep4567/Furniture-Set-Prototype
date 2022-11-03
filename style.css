@@ -14,6 +14,11 @@
   --first-color: #53c8ac;
   --second-color: #fff;
   --third-color: #808080;
+  --background-color: #f3f6fb;
+}
+
+body {
+  background: var(--background-color);
 }
 
 /* Navbar */
@@ -26,6 +31,7 @@
   padding-left: 30px;
   opacity: 1;
   padding-bottom: 20px;
+  position: fixed;
 }
 
 .nav_logo a {
@@ -62,10 +68,12 @@ nav ul li {
   color: var(--second-color);
 }
 
-.nav_list button a {
-  text-decoration: none;
-  font-size: 20px;
-  color: var(--second-color);
+.nav_list li a:hover {
+  position: relative;
+  top: -2px;
+  color: var(--first-color);
+  transition: 0.8s;
+  text-shadow: 0px 10px 20px #53c8ac;
 }
 
 .nav_list button {
@@ -75,12 +83,22 @@ nav ul li {
   background-color: var(--first-color);
   border: 1px solid #57e6c5;
   box-shadow: 5px 5px 20px grey;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--second-color);
 }
 
 /* container-2 */
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 460px;
+  justify-content: center;
+  align-items: center;
+}
 .home::before {
   content: "";
-  position: absolute;
   background: url(./assets/img1.jpg) no-repeat center center/cover;
   position: absolute;
   top: 0px;
@@ -95,7 +113,30 @@ nav ul li {
   font-size: 80px;
   text-align: center;
   font-family: var(--first-font);
-  color: black;
-  padding-top: 200px;
+  color: #ddd9d9c5;
+  padding-top: 170px;
   text-shadow: 2px 2px 10px #4a4a4a;
+}
+
+.card_attach {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card img {
+  width: 400px;
+  height: 300px;
+  border-radius: 20%;
+  cursor: pointer;
+  display: block;
+}
+
+.card img:hover {
+  position: relative;
+  top: -5px;
+  width: 405px;
+  height: 305px;
+  transition: 0.3s ease-in-out;
+  transform: scale();
 }
