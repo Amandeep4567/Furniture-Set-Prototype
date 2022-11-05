@@ -14,7 +14,7 @@
   --first-color: #53c8ac;
   --second-color: #fff;
   --third-color: #808080;
-  --background-color: #f3f6fb;
+  --background-color: #dadada;
 }
 
 body {
@@ -32,6 +32,7 @@ body {
   opacity: 1;
   padding-bottom: 20px;
   position: fixed;
+  z-index: 9999;
 }
 
 .nav_logo a {
@@ -57,6 +58,7 @@ nav ul li {
   font-family: var(--third-font);
   padding-top: 20px;
   font-size: 20px;
+  text-shadow: 0px 2px 5px #4a4a4a;
 }
 
 .nav_list {
@@ -93,7 +95,7 @@ nav ul li {
   display: flex;
   flex-direction: column;
   padding: 3px 200px;
-  height: 460px;
+  height: 550px;
   justify-content: center;
   align-items: center;
 }
@@ -114,7 +116,7 @@ nav ul li {
   text-align: center;
   font-family: var(--first-font);
   color: #ddd9d9c5;
-  padding-top: 170px;
+  padding-top: 320px;
   text-shadow: 2px 2px 10px #4a4a4a;
 }
 
@@ -130,6 +132,7 @@ nav ul li {
   border-radius: 20%;
   cursor: pointer;
   display: block;
+  box-shadow: 0px 2px 10px #4a4a4a;
 }
 
 .card img:hover {
@@ -139,4 +142,95 @@ nav ul li {
   height: 305px;
   transition: 0.3s ease-in-out;
   transform: scale();
+}
+
+/* Container-3 */
+
+.container-3 {
+  margin-top: 200px;
+}
+
+.head_flop {
+  text-align: center;
+}
+
+.head_flop h1 {
+  font-family: var(--first-font);
+  font-size: 70px;
+  color: var(--third-color);
+}
+
+.head_flop .line {
+  margin: auto;
+  align-self: center;
+  height: 3px;
+  width: 60px;
+  background: var(--first-color);
+}
+
+.head_flop p {
+  font-family: var(--first-font);
+  font-size: 20px;
+  color: var(--third-color);
+}
+
+.flip_flop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 50px;
+  padding-top: 30px;
+}
+
+.flip_card {
+  width: 405px;
+  height: 300px;
+  perspective: 500px;
+}
+
+.content {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 4s;
+  transform-style: preserve-3d;
+  border-radius: 10%;
+}
+
+.flip_card:hover .content {
+  transform: rotateY(180deg);
+  transition: transform 1.5s;
+}
+.front img {
+  border-radius: 10%;
+  width: 405px;
+  height: 300px;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  border-radius: 10%;
+  backface-visibility: hidden;
+}
+
+.back {
+  background: var(--third-color);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.back button {
+  padding: 15px;
+  border-radius: 20px;
+  border-color: transparent;
+  background-color: var(--first-color);
+  font-size: 20px;
+  color: var(--second-color);
+  font-family: var(--first-font);
 }
