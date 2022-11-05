@@ -14,6 +14,7 @@
   --first-color: #53c8ac;
   --second-color: #fff;
   --third-color: #808080;
+  --fourth-color: #353535;
   --background-color: #dadada;
 }
 
@@ -58,7 +59,7 @@ nav ul li {
   font-family: var(--third-font);
   padding-top: 20px;
   font-size: 20px;
-  text-shadow: 0px 2px 5px #4a4a4a;
+  text-shadow: 0px 10px 20px #4a4a4a;
 }
 
 .nav_list {
@@ -73,21 +74,23 @@ nav ul li {
 .nav_list li a:hover {
   position: relative;
   top: -2px;
-  color: var(--first-color);
+  color: var(--third-color);
   transition: 0.8s;
-  text-shadow: 0px 10px 20px #53c8ac;
+  text-shadow: 0px 10px 20px #353535;
 }
 
 .nav_list button {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   border-radius: 10px;
   background-color: var(--first-color);
-  border: 1px solid #57e6c5;
+  border-color: transparent;
   box-shadow: 5px 5px 20px grey;
   text-decoration: none;
   font-size: 20px;
   color: var(--second-color);
+  cursor: pointer;
+  box-shadow: 0px 5px 15px #57e6c5;
 }
 
 /* container-2 */
@@ -115,15 +118,16 @@ nav ul li {
   font-size: 80px;
   text-align: center;
   font-family: var(--first-font);
-  color: #ddd9d9c5;
-  padding-top: 320px;
-  text-shadow: 2px 2px 10px #4a4a4a;
+  color: var(--fourth-color);
+  padding-top: 150px;
+  text-shadow: 0px 10px 20px #4a4a4a;
 }
 
 .card_attach {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* flex-wrap: wrap; */
 }
 
 .card img {
@@ -157,14 +161,14 @@ nav ul li {
 .head_flop h1 {
   font-family: var(--first-font);
   font-size: 70px;
-  color: var(--third-color);
+  color: var(--fourth-color);
 }
 
 .head_flop .line {
   margin: auto;
   align-self: center;
   height: 3px;
-  width: 60px;
+  width: 500px;
   background: var(--first-color);
 }
 
@@ -220,17 +224,51 @@ nav ul li {
 }
 
 .back {
-  background: var(--third-color);
-  color: white;
+  /* background: var(--third-color); */
+  color: var(--third-color);
   transform: rotateY(180deg);
 }
 
+.back .back_div {
+  padding-top: 50px;
+}
+
+.back_div h1 {
+  font-size: 40px;
+  font-family: var(--first-font);
+}
+
+.back_div h4 {
+  font-size: 20px;
+  font-family: var(--third-font);
+}
+
 .back button {
-  padding: 15px;
+  padding: 10px;
   border-radius: 20px;
   border-color: transparent;
   background-color: var(--first-color);
   font-size: 20px;
   color: var(--second-color);
   font-family: var(--first-font);
+}
+
+.container-3 .show_more {
+  padding-top: 80px;
+  padding-left: 650px;
+}
+
+.container-3 .show_more button {
+  padding: 10px;
+  border: transparent;
+  border-radius: 10px;
+  background-color: var(--first-color);
+  box-shadow: 0px 5px 15px #57e6c5;
+  color: var(--second-color);
+  font-size: 20px;
+}
+
+.show_more button i {
+  position: relative;
+  top: 4px;
 }
