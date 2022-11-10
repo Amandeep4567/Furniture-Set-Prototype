@@ -1,6 +1,6 @@
 # Furniture-Set-Prototype
 
-Coming soon...
+Have a look 👨‍💻: https://amandeep4567.github.io/Furniture-Set-Prototype/
 
 ![Screenshot (258)](https://user-images.githubusercontent.com/90441055/201014166-29d2dd50-a82b-42a8-a3c3-f1637cd79123.png)
 ![Screenshot (259)](https://user-images.githubusercontent.com/90441055/201014174-2153105a-3fb5-4cad-b0aa-f29387fc6e98.png)
